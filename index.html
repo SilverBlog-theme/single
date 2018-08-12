@@ -14,6 +14,10 @@
             </div>
             {%- endfor -%}
         </section>
+        <section class="home-pagenav clearfix">
+            {% if now_page != 1 %}<a href="/index/{{ now_page - 1 }}" style="float: left">« 上一页</a>{% endif %}
+            {% if now_page != page_row and page_row != 1 %}<a href="/index/{{ now_page + 1 }}" style="float: right">下一页 »</a>{% endif %}
+        </section>
     </div>
 </main>
 {% include system_config.Theme+"/include/footer.html" %}
