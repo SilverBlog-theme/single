@@ -3,7 +3,7 @@
     <div class="wrap min">
         <section class="post-title">
             <h2>{{ page_info.title }}</h2>
-            <div class="post-meta"><time class="date">{{ page_info.time }}</time></div>
+            <div class="post-meta">{% if variable is defined %}<time class="date">{{ page_info.time }}</time>{% endif %}</div>
         </section>
         <article class="post-content">{{ content|safe }}</article>
         <section class="post-author">
