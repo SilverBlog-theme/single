@@ -357,7 +357,7 @@ main img{
 .home-title span{
     display: block;
     margin-bottom: 1em;
-    font-style: oblique;
+    /* font-style: oblique; */
 }
 
 /* - 头像 */
