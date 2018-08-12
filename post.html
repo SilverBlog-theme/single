@@ -1,0 +1,19 @@
+{% include system_config.Theme+"/include/header.html" %}
+<main>
+    <div class="wrap min">
+        <section class="post-title">
+            <h2>{{ page_info.title }}</h2>
+            <div class="post-meta"><time class="date">{{ page_info.time }}</time></div>
+        </section>
+        <article class="post-content">{{ content|safe }}</article>
+        <section class="post-author">
+            <figure><img src="{{ system_config.Author_Image }}" alt="Paul" width="200" height="200" /></figure>
+            <div>
+                <h4>{{ system_config.Author_Name }}</h4>
+                <p>{{ system_config.Author_Introduction }}</p>
+            </div>
+        </section>
+        <section id="comments" class="post-comments">{% include "include/comment.html" ignore missing %}</section>
+    </div>
+</main>
+{% include system_config.Theme+"/include/footer.html" %}
