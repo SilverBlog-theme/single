@@ -267,7 +267,7 @@ header{
     .toggle-btn{ display: none }
 }
 
-.toggle-btn, .light-btn, .search-btn{
+.toggle-btn, .light-btn, .rss-btn{
     z-index: 1;
     float: left;
     width: 2em;
@@ -276,16 +276,17 @@ header{
     position: relative;
     border-radius: 4px;
     transition: color 0.3s, background 0.3s;
+    display: block;
 }
 
 .toggle-btn{ margin-right: 0 }
-.search-btn{ float: right }
+.rss-btn{ float: right }
 
-.toggle-btn:hover, .light-btn:hover, .search-btn:hover{
+.toggle-btn:hover, .light-btn:hover, .rss-btn:hover{
     background: rgba(0, 0, 0, .05);
 }
 
-.toggle-btn:before, .light-btn:before, .search-btn:before{
+.toggle-btn:before, .light-btn:before, .rss-btn:before{
     display: block;
     text-align: center;
     font: 1em/2em "FontAwesome";
@@ -293,7 +294,7 @@ header{
 
 .toggle-btn:before{ content: "\f0c9" }
 .light-btn:before{ content: "\f0eb" }
-.search-btn:before{ content: "\f002" }
+.rss-btn:before{ content: "\f09e" }
 
 .head-search{
     z-index: 1;

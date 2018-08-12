@@ -23,13 +23,6 @@ var single = new function () {
         toggle.addEventListener("click", function () {
             menu.classList.toggle("active");
         });
-
-        var search = document.getElementsByClassName("search-btn")[0];
-        var bar = document.getElementsByClassName("head-search")[0];
-
-        search.addEventListener("click", function () {
-            bar.classList.toggle("active");
-        })
     };
 
     // 关灯切换
